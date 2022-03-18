@@ -2,7 +2,7 @@
   "name": "forex-exchange",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://carloshs1994.github.io/market-overview",
+  "homepage": "https://carloshs1994.github.io/forex-exchange",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.0",
     "@testing-library/jest-dom": "^4.2.4",
