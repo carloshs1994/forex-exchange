@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/forex-exchange/static/css/main.ed25af24.css",
-    "main.js": "/forex-exchange/static/js/main.f340f5b1.js",
+    "main.js": "/forex-exchange/static/js/main.5bc5b680.js",
     "index.html": "/forex-exchange/index.html",
     "main.ed25af24.css.map": "/forex-exchange/static/css/main.ed25af24.css.map",
-    "main.f340f5b1.js.map": "/forex-exchange/static/js/main.f340f5b1.js.map"
+    "main.5bc5b680.js.map": "/forex-exchange/static/js/main.5bc5b680.js.map"
   },
   "entrypoints": [
     "static/css/main.ed25af24.css",
-    "static/js/main.f340f5b1.js"
+    "static/js/main.5bc5b680.js"
   ]
 }
