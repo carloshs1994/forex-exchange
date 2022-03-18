@@ -11,15 +11,17 @@ const ListOfPriceConvertions = ({ filterValue }) => {
   );
   const arrForRender = (filterValue === '') ? originalList : filterByKeyList;
 
-  const Currencies = () => (arrForRender.sort((a, b) => {
-    if (order === 'ascending') return a[1] - b[1];
-    return b[1] - a[1];
-  }).map(([currencie, value]) => <li key={currencie}>{`to ${value} ${currencie}`}</li>));
+  const Currencies = () => (arrForRender
+    .sort((a, b) => {
+      if (order === 'ascending') return a[1] - b[1];
+      return b[1] - a[1];
+    })
+    .map(([currencie, value]) => <li key={currencie}>{`to ${value} ${currencie}`}</li>));
 
   return (
     <>
       <ul>
-        <Currencies />
+        {(arrForRender.length === 0) ? <li style={{ background: 'green' }}>No matchs</li> : <Currencies />}
       </ul>
     </>
   );

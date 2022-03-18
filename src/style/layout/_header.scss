@@ -1,0 +1,12 @@
+header {
+  width: 100vw;
+  height: 4rem;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  background-color: $gray-background;
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+}

@@ -1,5 +1,13 @@
 .App {
-  background-color: #aaa;
+  background-color: $dark-background;
   width: 100vw;
+  min-height: 100vh;
   color: #fff;
+  font-family: $Roboto;
+
+  h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+  }
 }

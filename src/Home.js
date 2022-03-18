@@ -13,7 +13,7 @@ import ListOfPriceConvertions from './components/ListOfPriceConvertions';
 import './style/main.scss';
 import Markets from './components/Markets';
 
-function App() {
+const App = () => {
   const order = useSelector((state) => state.homeReducer.order);
   const market = useSelector((state) => state.homeReducer.market);
   const currentValue = useSelector((state) => state.homeReducer.searchValue);
@@ -54,22 +54,26 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Markets />
-      <input
-        onChange={
-          (event) => {
-            dispatch(storeSearchValue(event.target.value));
-            handleChange(event);
+      <div className="form">
+        <input
+          onChange={
+            (event) => {
+              dispatch(storeSearchValue(event.target.value));
+              handleChange(event);
+            }
           }
-        }
-        type="text"
-        value={currentValue}
-      />
-      <button onClick={handleClick} type="button">Sort Price</button>
-      <h1>{`Sorting by ${order} order`}</h1>
+          type="text"
+          placeholder="Filter By Name"
+          value={currentValue}
+        />
+        <Markets />
+        <button onClick={handleClick} type="button">Sort Price</button>
+        <p>{`(Sorting by ${order} order)`}</p>
+      </div>
+      <h2>{`1 ${market}: `}</h2>
       <ListOfPriceConvertions filterValue={searchValue} />
     </div>
   );
-}
+};
 
 export default App;
