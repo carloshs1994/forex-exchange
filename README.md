@@ -1,3 +1,35 @@
+# Forex Exchange
+
+## Built With
+
+- React, Redux, SASS
+- Visual Studio Code.
+
+## Live Demo
+
+- [Live Demo Link github](https://carloshs1994.github.io/forex-exchange/)
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+- Clone this repository with git clone```git@github.com:carloshs1994/forex-exchange.git``` using your terminal or command line.
+- Change to the project directory by entering : <br>
+```cd forex-exchange``` in the terminal
+
+### Prerequisites
+
+You need to make sure to have installed the latest version of Node.js and npm on your computer.
+> To check run `node -v`, then `npm -v` and if you get a number it means you have them.
+
+### Install
+
+After clone it and before working on it, you have to run ```npm install``` so that all the dependencies of the project get downloaded in your pc locally.
+Such dependencies include webpack and linters checks, for which you have to either generate your own config file or get one. 
+
+Note: If you're a Microverse's Student, you should use the config files provided by the program.
+[Linters Config React-Redux](https://github.com/microverseinc/linters-config/tree/master/react-redux)  
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
@@ -42,3 +74,27 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Usage
+
+You're free to use this project however you like it for educational purposes. Just keep in mind the acknowledgment described below
+
+### Run linters checks
+
+Linter Checks are automatically run with Github actions when there's a pull request. If you want to run them locally, remember to have the config file in the root of the local project. 
+
+### Deployment
+
+The deployment can be found in the Github Pages of this repository or through the link provided above
+
+## Author
+
+👤 **Carlos Herver Solano**
+
+- GitHub: [@carloshs1994](https://github.com/carloshs1994)
+- Twitter: [@hscarlos_](https://twitter.com/hscarlos_)
+- LinkedIn: [Carlos HS](https://www.linkedin.com/in/carloshs94/)
+
+## Show your support
+
+Give a ⭐️ if you like this project!
