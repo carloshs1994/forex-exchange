@@ -1,0 +1,36 @@
+.filters {
+  width: 100vw;
+  height: calc(100vh - 4rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  overflow-y: auto;
+  background-color: $dark-background;
+  font-family: $Roboto;
+  
+  h1 {
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    color: $green;
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  a {
+    color: $green;
+    width: 60%;
+    height: 5rem;
+    background-color: $gray-background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 2.5rem;
+  }
+}

@@ -6,9 +6,9 @@ import {
   changeMarket,
   filterAscending,
   filterDescending,
+  storeCustomFilters,
   storeSearchValue,
 } from './redux/home/home';
-import Header from './components/Header';
 import ListOfPriceConvertions from './components/ListOfPriceConvertions';
 import './style/main.scss';
 import Markets from './components/Markets';
@@ -53,7 +53,6 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header />
       <div className="form">
         <input
           onChange={
@@ -67,6 +66,7 @@ const App = () => {
           value={currentValue}
         />
         <Markets />
+        <button onClick={() => dispatch(storeCustomFilters(market, currentValue))} type="button">Save Current Search </button>
         <button onClick={handleClick} type="button">Sort Price</button>
         <p>{`(Sorting by ${order} order)`}</p>
       </div>
