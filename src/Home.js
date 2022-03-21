@@ -24,6 +24,8 @@ const App = () => {
 
   const handleClick = () => {
     if (order === 'ascending') {
+      // there is no need to share, and/or dispath an state value,
+      // mantain as an state value make it much easier to debug and understand
       dispatch(filterDescending());
     } else {
       dispatch(filterAscending());
@@ -41,6 +43,16 @@ const App = () => {
       setSerchParam({});
     }
   }, 200);
+
+  //  const handleChange = debounce(({target:{value}}) => 
+  //       // setSerchParam should be able to handle a request
+  //       // with a search param empty (actually, thats its default value)
+  //       // typing code could help to understand how reduce unnecessary sentences
+  //     setSerchParam({
+  //       search: value,
+  //       market,
+  //     })
+  // , 200);
 
   useEffect(() => {
     if (searchMarket) {
